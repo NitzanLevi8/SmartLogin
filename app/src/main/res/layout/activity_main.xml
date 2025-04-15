@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/title"
+            android:text="🔐 Smart Login Panel"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Battery Lock -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <EditText
+                android:id="@+id/input_battery"
+                android:hint="Enter battery percentage"
+                android:inputType="number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/check_battery"
+                android:text="Check"
+                android:layout_marginStart="8dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+
+            <ImageView
+                android:id="@+id/status_battery"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:src="@android:drawable/presence_invisible" />
+        </LinearLayout>
+
+        <!-- Charging Lock -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <EditText
+                android:id="@+id/input_charging"
+                android:hint="Type 'yes' if charging"
+                android:inputType="text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/check_charging"
+                android:text="Check"
+                android:layout_marginStart="8dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+
+            <ImageView
+                android:id="@+id/status_charging"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:src="@android:drawable/presence_invisible" />
+        </LinearLayout>
+
+        <!-- WiFi Lock -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <EditText
+                android:id="@+id/input_wifi"
+                android:hint="Type 'yes' if connected to WiFi"
+                android:inputType="text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/check_wifi"
+                android:text="Check"
+                android:layout_marginStart="8dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+
+            <ImageView
+                android:id="@+id/status_wifi"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:src="@android:drawable/presence_invisible" />
+        </LinearLayout>
+
+        <!-- Time Lock -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <EditText
+                android:id="@+id/input_hour"
+                android:hint="Enter current hour (0–23)"
+                android:inputType="number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/check_hour"
+                android:text="Check"
+                android:layout_marginStart="8dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+
+            <ImageView
+                android:id="@+id/status_hour"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:src="@android:drawable/presence_invisible" />
+        </LinearLayout>
+
+        <!-- Location Lock -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <EditText
+                android:id="@+id/input_location"
+                android:hint="Enter city"
+                android:inputType="text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/check_location"
+                android:text="Check"
+                android:layout_marginStart="8dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+
+            <ImageView
+                android:id="@+id/status_location"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:src="@android:drawable/presence_invisible" />
+        </LinearLayout>
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btn_login"
+            android:text="Unlock Access"
+            android:enabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#9E9E9E" />
+
+    </LinearLayout>
+</ScrollView>
